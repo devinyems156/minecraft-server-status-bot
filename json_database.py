@@ -29,7 +29,7 @@ def writejson(name, value, home_folder='', abs=False):
 
 
 default = {
-    'token': 'MTEyOTA0NDg5NDg3MTE5MTY3Mg.GMv_ao.Da3oP5TIMvpP-UazX6SCodyKx4rSYJjy0KNk7E',
+    'token': 'ENTER_YOUR_TOKEN_HERE',
     'time': 60,
     'ip': 'game1.falixserver.net:63546',
     'channel_id': 1129045123955703871,
