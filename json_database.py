@@ -34,7 +34,8 @@ default = {
     'ip': 'game1.falixserver.net:63546',
     'channel_id': 1129045123955703871,
     'embed_color': 0x75a4c3,
-    'message_id':  None
+    'message_id':  None,
+    'timezone_offset': 0
 }
 
 

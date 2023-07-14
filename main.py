@@ -7,6 +7,8 @@ import json_database
 bot = discord.Bot()
 data = json_database.getdata()
 
+offset = datetime.timedelta(hours=data['timezone_offset'])
+tzinfo = datetime.timezone(offset, name='МСК')
 
 @bot.event
 async def on_ready():
@@ -30,7 +32,7 @@ async def update_status():
             online = False
             print('exception', e)
         embed = discord.Embed(title=data['ip'], description=desc if online else 'Офлайн', color=data['embed_color'])
-        ts = datetime.datetime.now().time().strftime('%H:%M')
+        ts = datetime.datetime.now(tz=tzinfo).time().strftime('%H:%M')
         embed.set_footer(text=' Обновленоᅠ•ᅠCегодня в ' + ts)
         channel = bot.get_channel(data['channel_id'])
         if not data['message_id']:
