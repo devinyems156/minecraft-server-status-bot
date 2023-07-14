@@ -35,7 +35,8 @@ default = {
     'channel_id': 1129045123955703871,
     'embed_color': 0x75a4c3,
     'message_id':  None,
-    'timezone_offset': 0
+    'timezone_offset': 3,
+    'log_channel_id': 1129084586169733220
 }
 
 
